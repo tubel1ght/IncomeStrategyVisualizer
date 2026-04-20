@@ -410,8 +410,8 @@ with st.expander("", expanded=True):
     col1, col2, col3, col4, col5  = st.columns(5)
 
     with col1:
-        income                      = st.slider("Gross Income", 0.0, 500000.0, 300000.0, step=1000.0)
-        expenses                    = st.slider("Annual Expenses", 0.0, income, income / 2, step=1000.0)
+        income                      = st.slider("Gross Income", 0.0, 1000000.0, 200000.0, step=1000.0)
+        expenses                    = st.slider("Annual Expenses", 0.0, income, 100000, step=1000.0)
         show_baseline               = st.checkbox("Baseline", value=True)
 
     with col2:
@@ -430,7 +430,7 @@ with st.expander("", expanded=True):
         show_regular401k_backdoor   = st.checkbox("Regular401K + BackdoorRoth", value=True)
     
     with col5:
-        rothBackdoor_limit          = st.slider("Backdoor Roth Limit", 0.0, 70000.0, 70000.0, step=1000.0) 
+        rothBackdoor_limit          = st.slider("Backdoor Roth Limit", 0.0, 90000.0, 70000.0, step=1000.0) 
         capital_gains_tax_rate      = st.slider("Capital Gains Tax Rate (%)", 0.0, 30.0, 20.0, step=1.0)
         show_roth401k_backdoor      = st.checkbox("Roth401K + BackdoorRoth",    value=True)
         show_tables                 = False #st.checkbox("Show tables", value=False)
