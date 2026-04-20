@@ -411,7 +411,7 @@ with st.expander("", expanded=True):
 
     with col1:
         income                      = st.slider("Gross Income", 0.0, 1000000.0, 200000.0, step=1000.0)
-        expenses                    = st.slider("Annual Expenses", 0.0, income, 100000, step=1000.0)
+        expenses                    = st.slider("Annual Expenses", 0.0, income, 100000.0, step=1000.0)
         show_baseline               = st.checkbox("Baseline", value=True)
 
     with col2:
